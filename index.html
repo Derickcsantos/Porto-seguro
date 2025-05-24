@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto Seguro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logoDesenho.png" type="image/png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#">
+            <img src="img/Logo.png" alt="Porto Seguro" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#consorcio">Consórcios</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <i class="fas fa-times sidebar-close"></i>
+        <ul class="sidebar-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#consorcio">Consórcios</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- <h1 class="fade-in">Soluções inteligentes para o seu futuro</h1>
+        <p class="fade-in">As melhores promoções e condições de consórcio do momento para conquistar o seu bem dos sonhos!</p>
+        <a href="#simulation" class="btn btn-secondary fade-in">Fale conosco</a> -->
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title fade-in">O que é o Consórcio?</h2>
+        <p class="section-subtitle fade-in">Uma maneira colaborativa de obter crédito sem juros para conquistar seus objetivos</p>
+        
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <p>É uma maneira colaborativa de obter crédito sem juros. Funciona assim: um grupo de pessoas com o mesmo objetivo se reúne e, por meio do pagamento de contribuições mensais, acumula um valor que é distribuído mensalmente entre os participantes sorteados ou que deram lances.</p>
+                <p>Tudo isso é supervisionado pelo Banco Central e, no nosso caso, administrado pelo Porto Bank, garantindo toda a segurança e confiança para você alcançar seu objetivo!</p>
+                <a href="#consorcio" class="btn" style="margin-top: 1rem;">Conheça nossos planos</a>
+            </div>
+            <div class="about-image fade-in">
+               <iframe width="100%" height="300px" 
+                        src="https://www.youtube.com/embed/Ih3vna1DtSQ?autoplay=1&mute=1&loop=1&playlist=Ih3vna1DtSQ&controls=0" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title fade-in">Diferenciais do Consórcio</h2>
+        <p class="section-subtitle fade-in">Conheça as vantagens de adquirir seu consórcio conosco</p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Consultoria Personalizada</h3>
+                <p>Juntos, definimos o melhor plano para atingir o seu objetivo com as melhores condições do mercado.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <h3>Contratação Simples e Rápida</h3>
+                <p>Ao fechar com a gente, assine a proposta digital de onde estiver, sem burocracia e com toda segurança.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Chances desde o 1º mês</h3>
+                <p>Após o 1º mês, você já tem chance de contemplação para realizar seu sonho o quanto antes.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>O momento mais esperado</h3>
+                <p>Na contemplação, você conta com crédito para o seu objetivo, seja ele qual for, de forma segura.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Consorcio Section -->
+    <section class="consorcio" id="consorcio">
+        <h2 class="section-title fade-in">Nossos Consórcios</h2>
+        <p class="section-subtitle fade-in">Escolha o consórcio ideal para realizar seu sonho</p>
+        
+        <div class="consorcio-tabs">
+            <button class="tab-btn active" data-tab="imovel">Imóvel</button>
+            <button class="tab-btn" data-tab="carro">Carro</button>
+        </div>
+        
+        <div class="tab-content active" id="imovel">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Consórcio Imóvel</h3>
+            <p style="text-align: center; margin-bottom: 2rem;">Casa, terreno ou reforma, com parcelas reduzidas até a contemplação!</p>
+            
+            <div class="car-grid">
+                <div class="car-card fade-in">
+                    <img src="img/casa.png" alt="">
+                    <h3>Consórcio de Casa</h3>
+                    <p>Realize o sonho da casa própria com parcelas que cabem no seu bolso.</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="img/apartamento.png" alt="">
+                    <h3>Consórcio de Apartamento</h3>
+                    <p>Adquira seu apartamento sem entrada e sem juros abusivos.</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="img/terreno.png" alt="">
+                    <h3>Consórcio de Terreno</h3>
+                    <p>Garanta seu terreno para construir seu futuro onde você quiser.</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="img/reforma.png" alt="">
+                    <h3>Consórcio para Reforma</h3>
+                    <p>Reforme ou amplie sua casa com condições especiais.</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="carro">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Consórcio Carro</h3>
+            <p style="text-align: center; margin-bottom: 2rem;">Conquiste seu carro novo ou seminovo sem entrada e sem juros!</p>
+            
+            <div class="car-grid">
+                <div class="car-card fade-in">
+                    <img src="https://www.renault.com.br/content/dam/renault/br/veiculos/kwid/galeria/kwid-exterior-1.jpg" alt="Renault Kwid">
+                    <h3>Renault Kwid</h3>
+                    <p>Crédito de R$ 50.000,00</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/2023-onix-plus/mov/01-images/2023-onix-plus-branco-summit.jpg" alt="Chevrolet Onix">
+                    <h3>Chevrolet Onix</h3>
+                    <p>Crédito de R$ 80.000,00</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="https://www.vw.com.br/content/dam/vwbrasil/vehicles/nivus/1920x1080-Nivus-Highline-PRATA-URANO.jpg" alt="VW Nivus">
+                    <h3>VW Nivus</h3>
+                    <p>Crédito de R$ 100.000,00</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+                
+                <div class="car-card fade-in">
+                    <img src="https://www.fiat.com.br/content/dam/fiat/products/192/strada/hero/desktop/192_Fiat_Strada_Desktop_Hero_1.jpg" alt="Fiat Strada">
+                    <h3>Fiat Strada</h3>
+                    <p>Crédito de R$ 120.000,00</p>
+                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Simulation Section -->
+    <section class="simulation" id="simulation">
+        <h2 class="section-title fade-in">Faça uma Simulação</h2>
+        <p class="section-subtitle fade-in">Preencha o formulário abaixo e nosso consultor Renato Queiroz entrará em contato</p>
+        
+        <div class="simulation-form fade-in">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefone/Celular</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="[DDD] + Celular/Telefone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="credit">Crédito Desejado</label>
+                    <select id="credit" name="credit" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="50k">Até R$ 50.000,00</option>
+                        <option value="80k">R$ 50.000,00 - R$ 80.000,00</option>
+                        <option value="100k">R$ 80.000,00 - R$ 100.000,00</option>
+                        <option value="120k">R$ 100.000,00 - R$ 120.000,00</option>
+                        <option value="120k+">Acima de R$ 120.000,00</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="consorcio">Tipo de Consórcio</label>
+                    <select id="consorcio" name="consorcio" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="imovel">Imóvel</option>
+                        <option value="carro">Carro</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem (Opcional)</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-secondary" style="width: 100%;">Enviar Simulação</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title fade-in">Depoimentos</h2>
+        <p class="section-subtitle fade-in">Veja o que nossos clientes dizem sobre nossos serviços</p>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-text">
+                    Adquiri meu carro zero pelo consórcio e foi a melhor decisão que tomei. A assessoria foi fundamental para eu ser contemplado rapidamente.
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+                    <div class="author-info">
+                        <h4>Marcos Silva</h4>
+                        <p>Consórcio de Carro</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-text">
+                    Consegui comprar meu apartamento com o consórcio. O atendimento foi excelente e me orientaram em todas as etapas do processo.
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+                    <div class="author-info">
+                        <h4>Ana Oliveira</h4>
+                        <p>Consórcio de Imóvel</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-text">
+                    Reformei minha casa toda com o consórcio. As parcelas cabiam no meu orçamento e pude fazer tudo do jeito que eu queria.
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente">
+                    <div class="author-info">
+                        <h4>Carlos Mendes</h4>
+                        <p>Consórcio para Reforma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title fade-in">Contato</h2>
+        <p class="section-subtitle fade-in">Entre em contato conosco para mais informações</p>
+        
+        <div class="contact-container">
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label for="contact-name">Nome</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">E-mail</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-phone">Telefone</label>
+                        <input type="tel" id="contact-phone" name="contact-phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Mensagem</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <div class="contact-info fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1973534215934!2d-46.65867598447571!3d-23.56134918468293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sPorto%20Seguro!5e0!3m2!1spt-BR!2sbr!4v1689872947298!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. das Nações Unidas, 13771 - São Paulo/SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 4004-6464</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@wassessoria.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="img/Logo.png" alt="Porto Seguro">
+                </div>
+                <p>A W Assessoria é parceira autorizada Porto Seguro para oferecer as melhores soluções em consórcios para você realizar seus sonhos.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#consorcio">Consórcios</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Consórcios</h3>
+                <ul>
+                    <li><a href="#consorcio">Consórcio de Imóvel</a></li>
+                    <li><a href="#consorcio">Consórcio de Carro</a></li>
+                    <li><a href="#consorcio">Consórcio de Terreno</a></li>
+                    <li><a href="#consorcio">Consórcio para Reforma</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h4>Consultor</h4>
+                        <p>Renato Queiroz</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>renato.queiroz@wassessoria.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Renato Queiroz, consultor de Consórcio Porto Seguro. Todos os direitos reservados.</p>
+            <p>CNPJ: 00.000.000/0000-00</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
