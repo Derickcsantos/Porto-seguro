@@ -9,6 +9,10 @@
     <link rel="icon" href="img/logoDesenho.png" type="image/png">
 </head>
 <body>
+
+    <a href="https://api.whatsapp.com/send/?phone=5511977163214&text=Ol%C3%A1%2C+vim+pelo+seu+site&type=phone_number&app_absent=0" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <!-- Navbar -->
     <nav class="navbar">
         <a href="#">
@@ -54,13 +58,13 @@
             <div class="about-text fade-in">
                 <p>É uma maneira colaborativa de obter crédito sem juros. Funciona assim: um grupo de pessoas com o mesmo objetivo se reúne e, por meio do pagamento de contribuições mensais, acumula um valor que é distribuído mensalmente entre os participantes sorteados ou que deram lances.</p>
                 <p>Tudo isso é supervisionado pelo Banco Central e, no nosso caso, administrado pelo Porto Bank, garantindo toda a segurança e confiança para você alcançar seu objetivo!</p>
-                <a href="#consorcio" class="btn" style="margin-top: 1rem;">Conheça nossos planos</a>
+                <a href="#consorcio" class="btn" style="margin-top: 1rem; border: 1px solid #fff; text-decoration: none; border-radius: 10px; padding: 15px; color: #fff; background-color: #0abcd7;">Conheça nossos planos</a>
             </div>
             <div class="about-image fade-in">
                <iframe width="100%" height="300px" 
-                        src="https://www.youtube.com/embed/Ih3vna1DtSQ?autoplay=1&mute=1&loop=1&playlist=Ih3vna1DtSQ&controls=0" 
+                        src="https://www.youtube.com/embed/Ih3vna1DtSQ?&mute=1&loop=1&playlist=Ih3vna1DtSQ&controls=0" 
                         frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                 </iframe>
             </div>
@@ -109,92 +113,110 @@
     
     <!-- Consorcio Section -->
     <section class="consorcio" id="consorcio">
-        <h2 class="section-title fade-in">Nossos Consórcios</h2>
-        <p class="section-subtitle fade-in">Escolha o consórcio ideal para realizar seu sonho</p>
+        <!-- <h2 class="section-title fade-in">Nossos Consórcios</h2>
+        <p class="section-subtitle fade-in">Escolha o consórcio ideal para realizar seu sonho</p> -->
         
-        <div class="consorcio-tabs">
-            <button class="tab-btn active" data-tab="imovel">Imóvel</button>
-            <button class="tab-btn" data-tab="carro">Carro</button>
-        </div>
-        
-        <div class="tab-content active" id="imovel">
-            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Consórcio Imóvel</h3>
-            <p style="text-align: center; margin-bottom: 2rem;">Casa, terreno ou reforma, com parcelas reduzidas até a contemplação!</p>
+        <!-- Consórcio Imóvel -->
+        <div class="consorcio-type">
+            <div class="consorcio-header">
+                <h3>Consórcio Imóvel</h3>
+                <p>Casa, terreno ou reforma, com parcelas reduzidas até a contemplação!</p>
+            </div>
             
             <div class="car-grid">
                 <div class="car-card fade-in">
-                    <img src="img/casa.png" alt="">
-                    <h3>Consórcio de Casa</h3>
-                    <p>Realize o sonho da casa própria com parcelas que cabem no seu bolso.</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/casa.png" alt="Casa">
+                    <div class="car-card-content">
+                        <h3>Consórcio de Casa</h3>
+                        <p>Realize o sonho da casa própria com parcelas que cabem no seu bolso.</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="img/apartamento.png" alt="">
-                    <h3>Consórcio de Apartamento</h3>
-                    <p>Adquira seu apartamento sem entrada e sem juros abusivos.</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/apartamento.png" alt="Apartamento">
+                    <div class="car-card-content">
+                        <h3>Consórcio de Apartamento</h3>
+                        <p>Adquira seu apartamento sem entrada e sem juros abusivos.</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="img/terreno.png" alt="">
-                    <h3>Consórcio de Terreno</h3>
-                    <p>Garanta seu terreno para construir seu futuro onde você quiser.</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/terreno.png" alt="Terreno">
+                    <div class="car-card-content">
+                        <h3>Consórcio de Terreno</h3>
+                        <p>Garanta seu terreno para construir seu futuro onde você quiser.</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="img/reforma.png" alt="">
-                    <h3>Consórcio para Reforma</h3>
-                    <p>Reforme ou amplie sua casa com condições especiais.</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/reforma.png" alt="Reforma">
+                    <div class="car-card-content">
+                        <h3>Consórcio para Reforma</h3>
+                        <p>Reforme ou amplie sua casa com condições especiais.</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="tab-content" id="carro">
-            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Consórcio Carro</h3>
-            <p style="text-align: center; margin-bottom: 2rem;">Conquiste seu carro novo ou seminovo sem entrada e sem juros!</p>
+        <!-- Consórcio Automóvel -->
+        <div class="consorcio-type">
+            <div class="consorcio-header">
+                <h3>Consórcio Automóvel</h3>
+                <p>Conquiste seu carro novo ou seminovo sem entrada e sem juros!</p>
+            </div>
             
             <div class="car-grid">
                 <div class="car-card fade-in">
-                    <img src="https://www.renault.com.br/content/dam/renault/br/veiculos/kwid/galeria/kwid-exterior-1.jpg" alt="Renault Kwid">
-                    <h3>Renault Kwid</h3>
-                    <p>Crédito de R$ 50.000,00</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/kwid.png" alt="Renault Kwid">
+                    <div class="car-card-content">
+                        <h3>Renault Kwid</h3>
+                        <p>Crédito de R$ 50.000,00</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/2023-onix-plus/mov/01-images/2023-onix-plus-branco-summit.jpg" alt="Chevrolet Onix">
-                    <h3>Chevrolet Onix</h3>
-                    <p>Crédito de R$ 80.000,00</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/onix.png" alt="Chevrolet Onix">
+                    <div class="car-card-content">
+                        <h3>Chevrolet Onix</h3>
+                        <p>Crédito de R$ 80.000,00</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="https://www.vw.com.br/content/dam/vwbrasil/vehicles/nivus/1920x1080-Nivus-Highline-PRATA-URANO.jpg" alt="VW Nivus">
-                    <h3>VW Nivus</h3>
-                    <p>Crédito de R$ 100.000,00</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/nivus.png" alt="VW Nivus">
+                    <div class="car-card-content">
+                        <h3>VW Nivus</h3>
+                        <p>Crédito de R$ 100.000,00</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
                 
                 <div class="car-card fade-in">
-                    <img src="https://www.fiat.com.br/content/dam/fiat/products/192/strada/hero/desktop/192_Fiat_Strada_Desktop_Hero_1.jpg" alt="Fiat Strada">
-                    <h3>Fiat Strada</h3>
-                    <p>Crédito de R$ 120.000,00</p>
-                    <a href="#simulation" class="btn" style="margin-top: 1rem; display: inline-block;">Simular</a>
+                    <img src="img/strada.png" alt="Fiat Strada">
+                    <div class="car-card-content">
+                        <h3>Fiat Strada</h3>
+                        <p>Crédito de R$ 120.000,00</p>
+                        <a href="#simulation" class="btn">Simular</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+</section>
     <!-- Simulation Section -->
     <section class="simulation" id="simulation">
         <h2 class="section-title fade-in">Faça uma Simulação</h2>
         <p class="section-subtitle fade-in">Preencha o formulário abaixo e nosso consultor Renato Queiroz entrará em contato</p>
         
         <div class="simulation-form fade-in">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name" required>
@@ -237,7 +259,7 @@
                     <textarea id="message" name="message" rows="3"></textarea>
                 </div>
                 
-                <button type="submit" class="btn btn-secondary" style="width: 100%;">Enviar Simulação</button>
+                <button type="submit" class="btn btn-secondary" style="width: 100%;height: 40px; cursor: pointer; border-radius: 15px; margin-bottom: 15px; background-color: rgb(254, 254, 254); border: 1px solid #c4c4c4; color: #000000; ">Enviar Simulação</button>
             </form>
         </div>
     </section>
@@ -288,6 +310,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Dúvidas -->
+    <section class="duvidas" id="duvidas">
+        <div id="typebot">
+            <h2>FAQ</h2>
+            <div class="bot" style="width: 100%; height: 500px; border-radius: 15px; overflow: hidden;">
+                <iframe src="https://typebot.co/faq-qbnupfh" style="width: 80%; height: 500px; border-radius: 15px; overflow: hidden; border: none;"></iframe>
+            </div>
+        </div>
+    </section>
     
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -296,7 +328,9 @@
         
         <div class="contact-container">
             <div class="contact-form fade-in">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                     <div class="form-group">
                         <label for="contact-name">Nome</label>
                         <input type="text" id="contact-name" name="contact-name" required>
@@ -317,12 +351,12 @@
                         <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                    <button type="submit" class="btn" style="width: 100%; height: 40px; border-radius: 15px;cursor: pointer; margin-bottom: 15px; background-color: rgb(254, 254, 254); border: 1px solid #c4c4c4; color: #000000; ">Enviar Mensagem</button>
                 </form>
             </div>
             
             <div class="contact-info fade-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1973534215934!2d-46.65867598447571!3d-23.56134918468293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sPorto%20Seguro!5e0!3m2!1spt-BR!2sbr!4v1689872947298!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d14632.878146234003!2d-46.6689777!3d-23.5246051!3m2!1i1024!2i768!4f13.1!2m1!1sporto%20seguro%20barra%20funda!5e0!3m2!1spt-BR!2sbr!4v1748143587526!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
                 <div class="contact-details">
                     <div class="contact-item">
@@ -331,7 +365,7 @@
                         </div>
                         <div>
                             <h4>Endereço</h4>
-                            <p>Av. das Nações Unidas, 13771 - São Paulo/SP</p>
+                            <p>R. Fuad Naufel, 209 - Barra Funda, São Paulo - SP, 01156-100</p>
                         </div>
                     </div>
                     
@@ -341,7 +375,7 @@
                         </div>
                         <div>
                             <h4>Telefone</h4>
-                            <p>(11) 4004-6464</p>
+                            <p>(11) 97716-3214</p>
                         </div>
                     </div>
                     
@@ -351,7 +385,7 @@
                         </div>
                         <div>
                             <h4>E-mail</h4>
-                            <p>contato@wassessoria.com.br</p>
+                            <p>renato.queiroz@portoseguro.com.br</p>
                         </div>
                     </div>
                 </div>
@@ -366,12 +400,11 @@
                 <div class="footer-logo">
                     <img src="img/Logo.png" alt="Porto Seguro">
                 </div>
-                <p>A W Assessoria é parceira autorizada Porto Seguro para oferecer as melhores soluções em consórcios para você realizar seus sonhos.</p>
+                <p>Somos consultoria autorizada da Porto Seguro para oferecer as melhores soluções em consórcios para você realizar seus sonhos.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/renato.queiroz_12"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511977163214&text=Ol%C3%A1%2C+vim+pelo+seu+site&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/renato-queiroz-0964a15a/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             
@@ -414,7 +447,7 @@
                     </div>
                     <div>
                         <h4>Telefone</h4>
-                        <p>(11) 99999-9999</p>
+                        <p>(11) 97716-3214</p>
                     </div>
                 </div>
                 
@@ -424,7 +457,7 @@
                     </div>
                     <div>
                         <h4>E-mail</h4>
-                        <p>renato.queiroz@wassessoria.com.br</p>
+                        <p>renato.queiroz@portoseguro.com.br</p>
                     </div>
                 </div>
             </div>
@@ -432,7 +465,7 @@
         
         <div class="footer-bottom">
             <p>&copy; 2025 Renato Queiroz, consultor de Consórcio Porto Seguro. Todos os direitos reservados.</p>
-            <p>CNPJ: 00.000.000/0000-00</p>
+            <p>CNPJ: 61.198.164/0001-60</p>
         </div>
     </footer>
     
