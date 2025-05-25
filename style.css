@@ -222,6 +222,32 @@ section {
     position: relative;
 }
 
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0;
+        margin: 0;
+        height: 70vh; /* Altura menor para mobile */
+        min-height: 400px; /* Altura mínima reduzida */
+        margin-top: 50px; /* Ajuste do margin-top */
+        background-size: contain; /* Garante que a imagem inteira seja visível */
+        background-color: #f8f9fa; /* Cor de fundo caso a imagem tenha transparência */
+    }
+    .about{
+         margin-top: 0;
+    }
+}
+
+/* Ajustes para telas muito pequenas (ex: smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .hero {
+         padding: 0;
+        margin: 0;
+        height: 60vh;
+        min-height: 300px;
+    }
+}
+
 .hero::before {
     content: '';
     position: absolute;
