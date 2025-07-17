@@ -4,6 +4,7 @@
     --primary-dark: #538cfb;
     --primary-light: #e6f0ff;
     --primary-extra-light: #f5f9ff;
+    --prymary-blue-light: #c9d4ea;
     
     --secondary: #ff6b00;
     --secondary-dark: #e05d00;
@@ -215,12 +216,14 @@ section {
     text-align: center;
     padding: 0 var(--space-md);
     margin-top: 60px;
-    background-image: url('banner.png');
+    background-image: url('BannerConsorcio.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
+
+
 
 /* Responsividade para mobile */
 @media (max-width: 768px) {
@@ -229,13 +232,14 @@ section {
         margin: 0;
         height: 70vh; /* Altura menor para mobile */
         min-height: 400px; /* Altura mínima reduzida */
-        margin-top: 50px; /* Ajuste do margin-top */
+        margin-top: 0px; /* Ajuste do margin-top */
         background-size: contain; /* Garante que a imagem inteira seja visível */
         background-color: #f8f9fa; /* Cor de fundo caso a imagem tenha transparência */
     }
     .about{
          margin-top: 0;
     }
+
 }
 
 /* Ajustes para telas muito pequenas (ex: smartphones em modo retrato) */
@@ -243,9 +247,10 @@ section {
     .hero {
          padding: 0;
         margin: 0;
-        height: 60vh;
+        height: 30vh;
         min-height: 300px;
     }
+
 }
 
 .hero::before {
